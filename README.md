@@ -24,15 +24,21 @@ yum install -y ca-certificates<br>
 apt-get install -y ca-certificates<br>
 
 
-安裝Docker-ce<br>
-wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable docker<br>
-安裝Docker-ce（大陸地區）<br>
+安裝Docker-ce
+```
+wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable docker
+```
+安裝Docker-ce（大陸地區）
 
 
 Vnet-Centos一鍵腳本<br>
-yum -y install wget;mkdir vnet;cd /root/vnet;wget -N --no-check-certificate "https://www.yunyiya.com/download/linux/vnet.sh";chmod +x vnet.sh;./vnet.sh<br>
-VNet-Debian一鍵腳本<br>
-apt -y install curl;mkdir vnet;cd /root/vnet;curl https://raw.githubusercontent.com/Neukchill/faq-of-neukchill/master/vnet.sh -o vnet.sh;chmod +x vnet.sh;./vnet.sh<br>
+```
+yum -y install wget;mkdir vnet;cd /root/vnet;wget -N --no-check-certificate "https://www.yunyiya.com/download/linux/vnet.sh";chmod +x vnet.sh;./vnet.sh
+```
+VNet-Debian一鍵腳本
+```
+apt -y install curl;mkdir vnet;cd /root/vnet;curl https://raw.githubusercontent.com/Neukchill/faq-of-neukchill/master/vnet.sh -o vnet.sh;chmod +x vnet.sh;./vnet.sh
+```
 #禁用端口;解除禁用<br>
 iptables -A INPUT -p tcp --dport 8081 -j DROP<br>
 iptables -A INPUT -p tcp --dport 8080 -j DROP<br>
