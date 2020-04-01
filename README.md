@@ -42,3 +42,4 @@ iptables -F
 wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh
 chmod +x superspeed.sh
 ./superspeed.sh
+ 
