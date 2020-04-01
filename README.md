@@ -25,7 +25,7 @@ apt-get install -y ca-certificates<br>
 
 
 安裝Docker-ce<br>
-wget -qO- https://get.docker.com/ | bash && systemctl start docker && systemctl enable docker<br>
+wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable docker<br>
 安裝Docker-ce（大陸地區）<br>
 
 
