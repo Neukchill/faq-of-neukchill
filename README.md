@@ -1,27 +1,35 @@
 # faq-of-neukchill
 開啟bbr加速<br>
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh<br>
+```
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+```
 
-大陸host加速github<br>
-192.30.253.112 github.com<br>
-192.30.253.113 github.com<br>
-151.101.184.133 assets-cdn.github.com<br>
-151.101.185.194 github.global.ssl.fastly.net<br>
-151.101.72.133 raw.githubusercontent.com<br>
+大陸host加速github
+```
+192.30.253.112 github.com
+192.30.253.113 github.com
+151.101.184.133 assets-cdn.github.com
+151.101.185.194 github.global.ssl.fastly.net
+151.101.72.133 raw.githubusercontent.com
+```
 
-Debian更換大陸apt源<br>
-cat  > /etc/apt/sources.list <<END<br>
-deb http://mirrors.163.com/debian/ stretch main<br>
-deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib<br>
-deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib<br>
-deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib<br>
-deb http://httpredir.debian.org/debian stretch-backports main contrib non-free<br>
-END<br>
-apt-get clean all && apt-get update && apt-get upgrade<br>
+Debian更換大陸apt源
+```
+cat  > /etc/apt/sources.list <<END
+deb http://mirrors.163.com/debian/ stretch main
+deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib
+deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib
+deb http://mirrors.163.com/debian-security/ stretch/updates main non-free contrib
+deb http://httpredir.debian.org/debian stretch-backports main contrib non-free
+END
+apt-get clean all && apt-get update && apt-get upgrade
+```
 
-安裝ca證書<br>
-yum install -y ca-certificates<br>
-apt-get install -y ca-certificates<br>
+安裝ca證書
+```
+yum install -y ca-certificates
+apt-get install -y ca-certificates
+```
 
 
 安裝Docker-ce
@@ -39,20 +47,24 @@ VNet-Debian一鍵腳本
 ```
 apt -y install curl;mkdir vnet;cd /root/vnet;curl https://raw.githubusercontent.com/Neukchill/faq-of-neukchill/master/vnet.sh -o vnet.sh;chmod +x vnet.sh;./vnet.sh
 ```
-#禁用端口;解除禁用<br>
-iptables -A INPUT -p tcp --dport 8081 -j DROP<br>
-iptables -A INPUT -p tcp --dport 8080 -j DROP<br>
-iptables -F<br>
+#禁用端口;解除禁用
+```
+iptables -A INPUT -p tcp --dport 8081 -j DROP
+iptables -A INPUT -p tcp --dport 8080 -j DROP
+iptables -F
+```
 
-一鍵測試伺服器到大陸的速度<br>
-wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh<br>
-chmod +x superspeed.sh<br>
-./superspeed.sh<br>
+一鍵測試伺服器到大陸的速度
+```
+wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh
+chmod +x superspeed.sh
+./superspeed.sh
+```
 
 安装Bestrace
 ```
 mkdir besttrace && cd besttrace
 wget -N --no-check-certificate https://cdn.ipip.net/17mon/besttrace4linux.zip
 unzip besttrace4linux.zip && chmod +x *
-```
 ./besttrace -q 1 
+```
