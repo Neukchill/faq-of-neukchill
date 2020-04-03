@@ -49,7 +49,10 @@ wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh<br>
 chmod +x superspeed.sh<br>
 ./superspeed.sh<br>
 
+安装Bestrace
+```
 mkdir besttrace && cd besttrace
 wget -N --no-check-certificate https://cdn.ipip.net/17mon/besttrace4linux.zip
 unzip besttrace4linux.zip && chmod +x *
+```
 ./besttrace -q 1 
