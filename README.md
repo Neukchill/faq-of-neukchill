@@ -41,11 +41,11 @@ wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable
 
 Vnet-Centos一鍵腳本<br>
 ```
-yum -y install wget;mkdir vnet;cd /root/vnet;wget -N --no-check-certificate "https://www.yunyiya.com/download/linux/vnet.sh";chmod +x vnet.sh;./vnet.sh
+yum -y install wget;wget -N --no-check-certificate "https://www.yunyiya.com/download/linux/vnet.sh";chmod +x vnet.sh;./vnet.sh
 ```
 VNet-Debian一鍵腳本
 ```
-apt -y install curl;mkdir vnet;cd /root/vnet;curl https://raw.githubusercontent.com/Neukchill/faq-of-neukchill/master/vnet.sh -o vnet.sh;chmod +x vnet.sh;./vnet.sh
+apt -y install curl;curl https://raw.githubusercontent.com/Neukchill/faq-of-neukchill/master/vnet.sh -o vnet.sh;chmod +x vnet.sh;./vnet.sh
 ```
 #禁用端口;解除禁用
 ```
