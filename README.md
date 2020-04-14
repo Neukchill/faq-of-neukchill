@@ -68,3 +68,12 @@ wget -N --no-check-certificate https://cdn.ipip.net/17mon/besttrace4linux.zip
 unzip besttrace4linux.zip && chmod +x *
 ./besttrace -q 1 
 ```
+
+V2ray後端一鍵對接
+```
+mkdir v2ray-agent  &&  \
+cd v2ray-agent && \
+curl https://raw.githubusercontent.com/hulisang/v2ray-sspanel-v3-mod_Uim-plugin/dev/install.sh -o install.sh && \
+chmod +x install.sh && \
+bash install.sh
+```
