@@ -77,3 +77,7 @@ curl https://raw.githubusercontent.com/hulisang/v2ray-sspanel-v3-mod_Uim-plugin/
 chmod +x install.sh && \
 bash install.sh
 ```
+Linux伺服器快速測試
+```
+curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast 
+```
