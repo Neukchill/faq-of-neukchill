@@ -37,7 +37,9 @@ apt-get install -y ca-certificates
 wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable docker
 ```
 安裝Docker-ce（大陸地區）
-
+```
+curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun;systemctl start docker;systemctl enable docker
+```
 
 Vnet-Centos一鍵腳本<br>
 ```
