@@ -30,7 +30,12 @@ apt-get clean all && apt-get update && apt-get upgrade
 yum install -y ca-certificates
 apt-get install -y ca-certificates
 ```
-
+安装Brook
+```
+git clone https://github.com/Neukchill/brook.git
+mv brook/brook-pf-mod.sh /root && rm -rf brook
+bash brook-pf-mod.sh
+```
 
 安裝Docker-ce
 ```
@@ -82,4 +87,8 @@ bash install.sh
 Linux伺服器快速測試
 ```
 curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast 
+```
+Debian安裝Dig
+```
+apt install dnsutils -y
 ```
