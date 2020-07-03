@@ -1,9 +1,14 @@
 # faq-of-neukchill
 開啟bbr加速<br>
 ```
-wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+sysctl -p
 ```
-
+```
+sysctl net.ipv4.tcp_available_congestion_control
+lsmod | grep bbr
+```
 大陸host加速github
 ```
 192.30.253.112 github.com
