@@ -50,6 +50,12 @@ wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable
 ```
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun;systemctl start docker;systemctl enable docker
 ```
+GOST
+```
+nohup ./gost -L udp://:25000 -L tcp://:25000 -F relay+mwss://x:8081 &
+nohup ./gost -L relay+mwss://:8081/127.0.0.1:8082 &
+```
+
 
 Vnet-Centos一鍵腳本<br>
 ```
