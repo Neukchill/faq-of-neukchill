@@ -50,6 +50,13 @@ wget -qO- https://get.docker.com/ | bash;systemctl start docker;systemctl enable
 ```
 curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun;systemctl start docker;systemctl enable docker
 ```
+RESTART DOCKER
+```
+crontab -l > docker.cron
+echo '0 3 * * * docker restart $(docker ps -q)' >> docker.cron
+crontab docker.cron
+```
+
 GOST
 ```
 nohup ./gost -L udp://:25000 -L tcp://:25000 -F relay+mwss://x:8081 &
