@@ -81,6 +81,9 @@ iptables -F
 
 一鍵測試伺服器到大陸的速度
 ```
+bash <(curl -Lso- https://git.io/superspeed)
+```
+```
 wget https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh
 chmod +x superspeed.sh
 ./superspeed.sh
