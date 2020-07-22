@@ -9,6 +9,10 @@ sysctl -p
 sysctl net.ipv4.tcp_available_congestion_control
 lsmod | grep bbr
 ```
+SPEEDTEST
+```
+wget -O ookla-speedtest.tgz 'https://bintray.com/ookla/download/download_file?file_path=ookla-speedtest-1.0.0-x86_64-linux.tgz' && gunzip ookla-speedtest.tgz && tar xvf  ookla-speedtest.tar && ./speedtest
+```
 大陸host加速github
 ```
 192.30.253.112 github.com
